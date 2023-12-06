@@ -13,8 +13,8 @@
                 <img src="./IMG/CFH.jpg" width="30px">
                 <figcaption>Katik</figcaption>
             </figure>
-            <a href="" class="navigation">Luas Segitiga</a>
-            <a href="" class="navigation">Keliling Segitiga</a>
+            <a href="#aLuas-segitiga" class="navigation">Luas Segitiga</a>
+            <a href="#aKeliling-segitiga" class="navigation">Keliling Segitiga</a>
         </nav>
     </header>
     <main>
@@ -29,7 +29,7 @@
                 <Article id="Luas-segitiga">
                     <button class="collapsible">Luas Segitiga</button>
                     <div class="content">
-                        <p>Rumus Luas Segitiga yaitu</p>
+                        <p id="aLuas-segitiga">Rumus Luas Segitiga yaitu</p>
 
                         <img src="./IMG/rumus luas segitiga-350-250px.svg" alt="Rumus Luas Segitiga" class="center Responsive-image" width="350" height="250">
 
@@ -51,12 +51,16 @@
                                     <input type="number" id="input-alas" class="katik-input growFlex">
                                 </label>
                             </div>
+                            <div class="itemButton">
+                                <button id="btnKatik">Hitung</button>
+                            </div>
                             <h4>Hasil Luas Segitiga</h4>
                             <div class="itemHasilRumus">
                                 <label for="input-Luas" id="label-Luas">Luas</label>
                                 <input type="text" name="displayHasil" class="itemHasil growFlex">
-                                <button id="btnKatik">Hitung</button>
-                                <button id="btnKatik">Ulangi</button>
+                            </div>
+                            <div class="itemButton">
+                                <button id="btnKatik" class="itemButton">Ulangi</button>
                             </div>
                         </div>
                     </div>
@@ -65,7 +69,7 @@
                 <article>
                     <button class="collapsible">Keliling Segitiga</button>
                     <div class="content">
-                        <p>Rumus Keliling Segitiga yaitu</p>
+                        <p id="aKeliling-segitiga">Rumus Keliling Segitiga yaitu</p>
 
                         <img src="./IMG/rumus keliling segitiga-300-250px.svg" alt="Rumus Luas Segitiga" class="center Responsive-image" width="300" height="250">
                         
@@ -91,12 +95,16 @@
                                     <input type="number" id="input-sisiC" class="katik-input growFlex">
                                 </label>
                             </div>
+                            <div class="itemButton">
+                                <button id="btnKatik">Hitung</button>
+                            </div>
                             <h4>Hasil Keliling Segitiga</h4>
                             <div class="itemHasilRumus">
                                 <label for="input-Keliling" id="label-Keliling">Keliling</label>
                                 <input type="text" name="displayHasil" class="itemHasil growFlex">
-                                <button id="btnKatik">Hitung</button>
-                                <button id="btnKatik">Ulangi</button>
+                            </div>
+                            <div class="itemButton">
+                                <button id="btnKatik" class="itemButton">Ulangi</button>
                             </div>
                         </div>
                     </div>
