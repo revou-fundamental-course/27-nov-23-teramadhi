@@ -8,19 +8,108 @@
 </head>
 <body>
     <header id="navigation-bar">
-        <h3 id="logo"><img src="IMG/CFH.jfif" width="30px"></h3>
         <nav class="navigation">
-            <a href="">Luas Segitiga</a>
-            <a href="">Keliling Segitiga</a>
+            <figure id="logo" class="growFlex">
+                <img src="IMG/CFH.jpg" width="30px">
+                <figcaption>Katik</figcaption>
+            </figure>
+            <a href="" class="navigation">Luas Segitiga</a>
+            <a href="" class="navigation">Keliling Segitiga</a>
         </nav>
     </header>
-    <main class="input-luas-section">
-        <label for="input-tinggi" id="label-tinggi">Tinggi</label>
-        <input type="number" id="input-tinggi" class="katik-input">
-        <div class="buttons">
-            <button>Hitung</button>
-            <button>Ulang</button>
-        </div>
+    <main>
+        <section id="about">
+            <h3>Kalkulator Matematik</h3>
+            <p> Hai Sobat, Selamat datang di Kalkulator Matematik. Situs ini merukapan web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        </section>
+
+        </article>
+
+        <section id="List-kalkulator-matematik">
+                <Article id="Luas-segitiga">
+                    <button class="collapsible">Luas Segitiga</button>
+                    <div class="content">
+                        <p>Rumus Luas Segitiga yaitu</p>
+
+                        <img src="/IMG/rumus luas segitiga -350-250.svg" alt="Rumus Luas Segitiga" class="center Responsive-image" width="350" height="250">
+
+                        <p class="rumus-text">L=1/2 x a x t</p>
+                        
+                        <ul> Dimana;
+                            <li>L = Luas</li>
+                            <li>a = Panjang Alas</li>
+                            <li>t = Tinggi</li>
+                        </ul>
+                           
+                        <div class="containerKalkulator">
+                            <h4>Hitung Luas Segitiga</h4>
+                            <div class="itemHitungRumus">
+                                <label for="input-tinggi" id="label-tinggi" class="itemHitungRumus growFlex">Tinggi
+                                    <input type="number" id="input-tinggi" class="katik-input growFlex">
+                                </label>
+                                <label for="input-alas" id="label-alas" class="itemHitungRumus growFlex"">Alas
+                                    <input type="number" id="input-alas" class="katik-input growFlex">
+                                </label>
+                            </div>
+                            <h4>Hasil Luas Segitiga</h4>
+                            <div class="itemHasilRumus">
+                                <label for="input-Luas" id="label-Luas">Luas</label>
+                                <input type="text" name="displayHasil" class="itemHasil growFlex">
+                                <button id="btnKatik">Hitung</button>
+                                <button id="btnKatik">Ulangi</button>
+                            </div>
+                        </div>
+                    </div>
+                </Article>
+               
+                <article>
+                    <button class="collapsible">Keliling Segitiga</button>
+                    <div class="content">
+                        <p>Rumus Keliling Segitiga yaitu</p>
+
+                        <img src="/IMG/rumus keliling segitiga -300-250 - .svg" alt="Rumus Luas Segitiga" class="center Responsive-image" width="300" height="250">
+                        
+                        <p class="rumus-text">K= S1 + S2 + S3</p>
+                        
+                        <ul> Dimana;
+                            <li>K = Keliling</li>
+                            <li>S1 = Sisi A</li>
+                            <li>S2 = Sisi B</li>
+                            <li>S3 = Sisi C</li>
+                        </ul>
+                           
+                        <div class="containerKalkulator">
+                            <h4>Hitung Keliling Segitiga</h4>
+                            <div class="itemHitungRumus">
+                                <label for="input-sisiA" id="label-sisiA" class="itemHitungRumus growFlex">Sisi A
+                                    <input type="number" id="input-sisiA" class="katik-input growFlex">
+                                </label>
+                                <label for="input-sisiB" id="label-sisiB" class="itemHitungRumus growFlex">Sisi B
+                                    <input type="number" id="input-sisiB" class="katik-input growFlex">
+                                </label>
+                                <label for="input-sisiC" id="label-sisiC" class="itemHitungRumus growFlex">Sisi C
+                                    <input type="number" id="input-sisiC" class="katik-input growFlex">
+                                </label>
+                            </div>
+                            <h4>Hasil Keliling Segitiga</h4>
+                            <div class="itemHasilRumus">
+                                <label for="input-Luas" id="label-Luas">Keliling</label>
+                                <input type="text" name="displayHasil" class="itemHasil growFlex">
+                                <button id="btnKatik">Hitung</button>
+                                <button id="btnKatik">Ulangi</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            
+        </section>
     </main>
+    <footer>
+        <p>Copyright &copy; 2023 <NAME> Teramadhi Kirliana Putra</p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

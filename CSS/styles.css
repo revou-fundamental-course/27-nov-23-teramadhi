@@ -2,32 +2,79 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#navigation-bar {
+.navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.navigation> a{
+    text-decoration: none;
+    color: greenyellow;
+}
+
+#navigation-bar {
+    background-color: black;
     border-bottom: 1px solid green;
 }
 
 #logo {
-    margin-top: 0;
+    display: flex;
+    font-weight: bold;
+    gap: 10px;
+    align-items: center;
+    color: greenyellow;
 }
 
-/* .navigation {
-    display: flex;
-    align-items: flex-end;
-} */
+#about {
+    margin: auto;
+    text-align: center;
+}
 
-.navigation> a{
-    text-decoration: none;
-    color: green;
+.rumus-text {
+    font-weight: bold;
+
+}
+
+.growFlex {
+    flex-grow: 2;
+}
+
+/* Emebeded Media */
+.responsive-image {
+    max-width: 100%;
+    height: auto
 }
 
 /* Input section */
 
-.input-luas-section {
+.containerKalkulator {
     display: flex;
     flex-direction: column;
     margin-top: 26px;
+}
+
+.itemHitungRumus {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.itemHasilRumus {
+    display: flex;
+    
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#Luas-Segitia {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 
 label {
@@ -43,18 +90,18 @@ label {
 
 }
 
-/* .katik-input:focus {
+.katik-input:focus {
     border: 2px greenyellow;
-} */
-
-.buttons {
-    display: flex;
-    align-self: center;
-    gap: 20px;
-    margin-top: 10px;
 }
 
-button {
+.itemHasil {
+    outline: none;
+    border-radius: 10px;
+    padding: 8px;
+    border: 2px solid green;
+}
+
+#btnKatik {
     background-color: goldenrod;
     color: white;
     padding: 10px 20px;
@@ -63,11 +110,48 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+#btnKatik:hover {
     background-color: rgb(182, 138, 27);
 }
 
-button:active {
+#btnKatik:active {
     background-color: goldenrod;
     transform: translateY(2px);
 }
+
+/* Animated Collapsibles */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
