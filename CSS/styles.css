@@ -7,12 +7,8 @@ h4 {
     margin-bottom: 8px;
 }
 
-.navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-right: 20px;
+footer {
+    text-align: center
 }
 
 .navigation> a{
@@ -33,11 +29,6 @@ h4 {
     color: greenyellow;
 }
 
-#about {
-    margin: auto;
-    text-align: center;
-}
-
 .rumus-text {
     font-weight: bold;
 
@@ -45,22 +36,6 @@ h4 {
 
 .growFlex {
     flex-grow: 2;
-}
-
-.articleHeader {
-    background-color: green;
-    color: white;
-    margin: auto;
-    padding: 10px;
-}
-
-.contentArticle {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: auto;
-    padding: 20px;
 }
 
 /* Emebeded Media */
@@ -164,18 +139,6 @@ label {
 }
 
 /* Animated Collapsibles */
-.collapsible {
-    background-color: grey;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-  }
   
   .active, .collapsible:hover {
     background-color: grey;
@@ -192,8 +155,52 @@ label {
   .active:after {
     content: '-';
   }
-  
-  .content {
+
+  /* Responsive Element */
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+#about {
+    margin: auto;
+    text-align: center;
+}
+
+.contentArticle {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 20px;
+}
+
+.articleHeader {
+    background-color: green;
+    color: white;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Responsive Animated Collapsibles */
+.collapsible {
+    background-color: grey;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+
+.content {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
