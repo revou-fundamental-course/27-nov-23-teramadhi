@@ -44,29 +44,31 @@
                         <div class="containerKalkulator">
                             <h4>Hitung Luas Segitiga</h4>
                             <div class="itemHitungRumus">
-                                <label for="input-tinggi" id="label-tinggi" class="itemHitungRumus growFlex">Tinggi
-                                    <input type="number" id="input-tinggi" class="katik-input growFlex">
-                                </label>
                                 <label for="input-alas" id="label-alas" class="itemHitungRumus growFlex"">Alas
-                                    <input type="number" id="input-alas" class="katik-input growFlex">
+                                    <input type="number" id="input-alas" class="katik-input growFlex" placeholder="...ketik nilai alas">
+                                </label>
+                                <label for="input-tinggi" id="label-tinggi" class="itemHitungRumus growFlex">Tinggi
+                                    <input type="number" id="input-tinggi" class="katik-input growFlex" placeholder="...ketik nilai tinggi">
                                 </label>
                             </div>
                             <div class="itemButton">
-                                <button id="btnKatik">Hitung</button>
+                                <button id="hitungLuasSegitiga" class="btnKatik">Hitung</button>
                             </div>
                             <h4>Hasil Luas Segitiga</h4>
+                            <p id="rumusLuasSegitiga"></p>
+                            <p id="penjabarLuasSegitiga"></p>
                             <div class="itemHasilRumus">
-                                <label for="input-Luas" id="label-Luas">Luas</label>
-                                <input type="text" name="displayHasil" class="itemHasil growFlex">
+                                <label for="hasilLuasSegitiga" id="label-Luas">Luas</label>
+                                <input type="number" readonly id="hasilLuasSegitiga" class="itemHasil growFlex">
                             </div>
                             <div class="itemButton">
-                                <button id="btnKatik" class="itemButton">Ulangi</button>
+                                <button id="ulangiLuasSegitiga" class="btnKatik">Ulangi</button>
                             </div>
                         </div>
                     </div>
                 </Article>
                
-                <article>
+                <article id="Keliling-segitiga">
                     <button class="collapsible">Keliling Segitiga</button>
                     <div class="content">
                         <p id="aKeliling-segitiga">Rumus Keliling Segitiga yaitu</p>
@@ -86,25 +88,26 @@
                             <h4>Hitung Keliling Segitiga</h4>
                             <div class="itemHitungRumus">
                                 <label for="input-sisiA" id="label-sisiA" class="itemHitungRumus growFlex">Sisi A
-                                    <input type="number" id="input-sisiA" class="katik-input growFlex">
+                                    <input type="number" id="input-sisiA" class="katik-input growFlex"placeholder="...ketik nilai sisi" >
                                 </label>
                                 <label for="input-sisiB" id="label-sisiB" class="itemHitungRumus growFlex">Sisi B
-                                    <input type="number" id="input-sisiB" class="katik-input growFlex">
+                                    <input type="number" id="input-sisiB" class="katik-input growFlex"placeholder="...ketik nilai sisi" >
                                 </label>
                                 <label for="input-sisiC" id="label-sisiC" class="itemHitungRumus growFlex">Sisi C
-                                    <input type="number" id="input-sisiC" class="katik-input growFlex">
+                                    <input type="number" id="input-sisiC" class="katik-input growFlex"placeholder="...ketik nilai sisi" >
                                 </label>
                             </div>
                             <div class="itemButton">
-                                <button id="btnKatik">Hitung</button>
+                                <button id="hitungKelilingSegitiga" class="btnKatik">Hitung</button>
                             </div>
                             <h4>Hasil Keliling Segitiga</h4>
+                            <p id="penjabarKelilingSegitiga"></p>
                             <div class="itemHasilRumus">
-                                <label for="input-Keliling" id="label-Keliling">Keliling</label>
-                                <input type="text" name="displayHasil" class="itemHasil growFlex">
+                                <label for="hasilKelilingSegitiga" id="label-Keliling">Keliling</label>
+                                <input type="number" readonly id="hasilKelilingSegitiga" class="itemHasil growFlex">
                             </div>
                             <div class="itemButton">
-                                <button id="btnKatik" class="itemButton">Ulangi</button>
+                                <button id="ulangiKelilingSegitiga" class="btnKatik">Ulangi</button>
                             </div>
                         </div>
                     </div>
